@@ -2,10 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll */
 html, body {
   scroll-behavior: smooth;
+  background-color: #ffffff;
 }
 
+/* Default font */
 body {
   font-family: var(--font-inter), sans-serif;
+  color: #2a2a2a;
+}
+
+/* Hilangkan highlight kuning saat tap di HP */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Fix text rendering biar lebih halus dan premium */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animasi hover global — lembut dan profesional */
+a, button {
+  transition: all .25s ease;
+}
+
+/* Container max-width biar layout rapi semua halaman */
+.container-limit {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+/* Utility kelas untuk judul section — biar konsisten */
+.section-title {
+  @apply text-3xl md:text-4xl font-extrabold font-playfair text-gray-800 text-center mb-4;
+}
+
+/* Utility paragraf section — biar nyaman dibaca */
+.section-sub {
+  @apply text-center text-gray-600 max-w-2xl mx-auto mb-12;
+}
+
+/* Shadow premium (dipakai utk card paket/testimoni nanti) */
+.shadow-premium {
+  box-shadow: 0 12px 26px -4px rgba(0, 0, 0, 0.12);
+}
+
+/* Bg dark travel — untuk footer & section gelap */
+.bg-travel-dark {
+  background-color: #0D1A18;
+}
+
+/* Border emas halus */
+.border-gold {
+  border-color: #C29A45;
+}
+
+/* Text emas */
+.text-gold {
+  color: #C29A45;
+}
+
+/* Button utama gold */
+.btn-gold {
+  @apply bg-[#C29A45] text-white font-semibold rounded-lg shadow-lg;
+}
+.btn-gold:hover {
+  background-color: #b89238;
+}
+
+/* Button outline */
+.btn-outline {
+  @apply border border-white/60 text-white font-medium rounded-lg;
+}
+.btn-outline:hover {
+  border-color: #ffffff;
 }
