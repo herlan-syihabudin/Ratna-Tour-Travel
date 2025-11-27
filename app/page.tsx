@@ -25,6 +25,7 @@ export default function Home() {
         <SectionTestimoni />
         
         <SectionPembimbing />
+        
         <SectionLegalitas />
 
         {/* SECTION JADWAL */}
