@@ -5,6 +5,7 @@ import SectionTestimoni from "@/components/SectionTestimoni";
 import SectionJadwal from "@/components/SectionJadwal";   // ⬅️ tambah ini
 import Footer from "@/components/Footer";
 import SectionPembimbing from "@/components/SectionPembimbing";
+import SectionLegalitas from "@/components/SectionLegalitas";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <SectionTestimoni />
         
         <SectionPembimbing />
+        <SectionLegalitas />
 
         {/* SECTION JADWAL */}
         <SectionJadwal />
