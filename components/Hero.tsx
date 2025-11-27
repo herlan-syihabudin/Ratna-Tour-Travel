@@ -6,24 +6,24 @@ export default function Hero() {
     <section className="relative h-[92vh] w-full flex items-center justify-center text-white pt-[110px]">
       {/* BACKGROUND IMAGE */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center scale-105"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1580465448389-bb31a2071f30?auto=format&fit=crop&q=80')",
+            "url('https://images.unsplash.com/photo-1526491109672-74740652b963?auto=format&fit=crop&q=95')",
         }}
       />
 
       {/* DARK OVERLAY (biar teks kuat & premium) */}
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/55 backdrop-blur-[1px]" />
 
       {/* HERO CONTENT */}
       <div className="relative text-center px-6 max-w-3xl z-10">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight font-playfair mb-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight font-playfair mb-6 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
           Umroh Aman, Nyaman & Resmi{" "}
           <span className="text-[#C29A45] block">Untuk Keluarga Indonesia</span>
         </h1>
 
-        <p className="text-lg md:text-xl font-light opacity-90 mb-10">
+        <p className="text-lg md:text-xl font-light opacity-95 mb-10">
           Dibimbing sampai berangkat • Pembimbing berpengalaman • Harga Transparan
         </p>
 
