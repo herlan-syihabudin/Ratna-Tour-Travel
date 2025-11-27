@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SectionPaket from "@/components/SectionPaket";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -20,9 +19,6 @@ export default function Home() {
         {/* nanti Section Testimoni lanjut di bawah ini */}
         {/* <SectionTestimoni />  ⬅ tambah nanti pada step berikutnya */}
       </main>
-
-      {/* FOOTER */}
-      <Footer />
     </>
   );
 }
