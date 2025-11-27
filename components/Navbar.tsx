@@ -26,6 +26,7 @@ export default function Navbar() {
 
   return (
     <>
+      {/* ========================= NAVBAR ========================= */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
@@ -37,13 +38,13 @@ export default function Navbar() {
           {/* LOGO */}
           <Link
             href="/"
-            className="text-2xl font-playfair font-bold tracking-wide"
+            className="text-2xl font-playfair font-bold tracking-wide select-none"
           >
             <span className="text-emerald-700">Ratna</span>{" "}
             <span className="text-[#C29A45]">Travel</span>
           </Link>
 
-          {/* DESKTOP MENU */}
+          {/* ===== DESKTOP MENU ===== */}
           <div className="hidden md:flex items-center gap-8 text-[15px]">
             {menu.map((item) => (
               <Link
@@ -60,15 +61,16 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* DESKTOP WA CTA */}
+          {/* ===== DESKTOP WA CTA ===== */}
           <a
             href="https://wa.me/6281297396612?text=Assalamu'alaikum%20saya%20ingin%20konsultasi%20Umroh"
+            target="_blank"
             className="hidden md:block bg-[#C29A45] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#b89238] transition"
           >
             Konsultasi Gratis
           </a>
 
-          {/* HAMBURGER MOBILE */}
+          {/* ===== HAMBURGER MOBILE ===== */}
           <button
             onClick={() => setOpen(true)}
             className="md:hidden text-3xl text-gray-700"
@@ -78,7 +80,7 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* MOBILE SLIDE MENU */}
+      {/* ======================= MOBILE OVERLAY ======================= */}
       {open && (
         <div
           className="fixed inset-0 z-[60] bg-black/30 backdrop-blur-[2px]"
@@ -86,6 +88,7 @@ export default function Navbar() {
         />
       )}
 
+      {/* ======================= MOBILE SLIDE MENU ======================= */}
       <aside
         className={`fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-[70] p-6 flex flex-col gap-6 transform transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
@@ -99,21 +102,23 @@ export default function Navbar() {
           <FiX />
         </button>
 
+        {/* MENU LIST */}
         {menu.map((item) => (
           <Link
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
-            className={`text-lg font-medium ${
+            className={`text-lg font-medium transition ${
               pathname === item.href
                 ? "text-emerald-700 font-semibold"
-                : "text-gray-800"
+                : "text-gray-800 hover:text-emerald-700"
             }`}
           >
             {item.name}
           </Link>
         ))}
 
+        {/* CTA WHATSAPP */}
         <a
           href="https://wa.me/6281297396612?text=Assalamu'alaikum%20saya%20ingin%20konsultasi%20Umroh"
           target="_blank"
