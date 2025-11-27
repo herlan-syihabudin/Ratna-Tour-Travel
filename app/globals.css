@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* REGISTRASI CUSTOM CLASS WAJIB — biar @apply font-playfair tidak error */
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair), serif;
+  }
+}
+
 /* Smooth scroll */
 html, body {
   scroll-behavior: smooth;
