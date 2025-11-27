@@ -25,12 +25,13 @@ export default function SectionTestimoni() {
   return (
     <section id="testimoni" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        {/* JUDUL */}
         <h2 className="section-title">Testimoni Jamaah</h2>
         <p className="section-sub">
           Kisah perjalanan ibadah jamaah bersama Ratna Tour & Travel
         </p>
 
-        {/* GRID */}
+        {/* GRID 3 KOLOM */}
         <div className="grid md:grid-cols-3 gap-8">
           {dataTestimoni.map((item, i) => (
             <div
@@ -59,7 +60,7 @@ export default function SectionTestimoni() {
         {/* CTA */}
         <div className="text-center mt-14">
           <a
-            href="https://wa.me/6281297396612?text=Assalamu'alaikum,%20saya%20ingin%20melihat%20lebih%20banyak%20testimoni%20jamaah"
+            href="https://wa.me/6281297396612?text=Assalamu%27alaikum,%20saya%20ingin%20melihat%20lebih%20banyak%20testimoni%20jamaah"
             target="_blank"
             className="inline-block bg-emerald-700 hover:bg-emerald-800 transition text-white font-semibold px-10 py-4 rounded-lg text-lg shadow-lg"
           >
